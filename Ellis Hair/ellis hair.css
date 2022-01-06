@@ -1,0 +1,71 @@
+.mainhome {
+    background-image: url("./haircutblonde.jpg");
+    height: auto;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 10% 10%;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+
+.mainhome h1 {
+    border: black;
+    border-style: solid;
+    text-align: center;
+    background-color: gray;
+    opacity: 0.8;
+    
+}
+
+.logo {
+    height: 200px;
+    width: 200px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;;
+}
+
+.nav__links li, a {
+    font-family: Arial, Helvetica;
+    font-weight: 500;
+    font-size: 16px;
+    color: #eee;
+    text-decoration: none;
+}
+
+header, footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;/* 30 pixels from the top and then 10% from the sides*/
+    background-color: #24252a;
+}
+
+footer ul li:nth-child(1) {
+    padding: 0 0 0 0;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color:green;
+}
+
