@@ -69,3 +69,25 @@ footer ul li:nth-child(1) {
     color:green;
 }
 
+#map {
+    height: 50%;
+    width: 50%
+}
+
+.findme {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    height: 80%;
+    width: 90%;
+    margin: auto
+      }
+      
+      
+.findme {
+    height: 100vw;
+    width: 100vw;
+      }
