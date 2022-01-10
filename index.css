@@ -1,3 +1,7 @@
+body {
+    background-image: url(./Media/Background-website-01.jpg);
+}
+
 header h1 {
     font-family: 'Space Mono', monospace;
     text-align: center;
