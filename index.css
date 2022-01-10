@@ -2,9 +2,31 @@ body {
     background-image: url(./Media/Background-website-01.jpg);
 }
 
+
+header {
+    align-items: center;
+    display: flexbox;
+    text-align: center;
+    padding: 10px;
+}
+
 header h1 {
     font-family: 'Space Mono', monospace;
-    text-align: center;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0 20px;
+    color: black;
+    border: solid;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li:hover {
+    color: olivedrab;
 }
 
 img {
