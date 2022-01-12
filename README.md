@@ -12,4 +12,7 @@ Matthew
 
 <!-- Ideas for projects:
                 Meal Decider:
-                    Can you pick x number of meals based on number input from a chicken dish, pork, beef, fish etc but there can only be one of each with no duplication. -->
+                    Can you pick x number of meals based on number input from a chicken dish, pork, beef, fish etc but there can only be one of each with no duplication. 
+                Need to build logic for this in JS before creating HTML / CSS-->
+
+                
