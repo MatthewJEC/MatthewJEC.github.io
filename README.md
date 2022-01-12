@@ -9,3 +9,7 @@ If you come across this portfolio in any way, please feel free to let me know if
 
 Thank you and all the best!
 Matthew
+
+<!-- Ideas for projects:
+                Meal Decider:
+                    Can you pick x number of meals based on number input from a chicken dish, pork, beef, fish etc but there can only be one of each with no duplication. -->
