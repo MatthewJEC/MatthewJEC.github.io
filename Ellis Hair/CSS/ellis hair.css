@@ -1,5 +1,5 @@
 body {
-    background-color: whitesmoke;
+    background-color: hsl(0 0% 90%);
 }
 
 .mainhome {
@@ -7,18 +7,22 @@ body {
     background-size: 100%;
     padding: 10% 50px;
     background-position: center;
+    position: relative;
+    top: 15em;
 }
 
 
 .mainhome h1 {
-    size: 50px;
-    border: 2px solid black;
-    color: white;
-    background-color: black;
+    text-transform: uppercase;  
     text-align: center;
-    margin-left: 25%;
+    font-size: xx-large;
+    text-decoration: underline;
+    border: 2px solid hsl(0, 0%, 0%);
+    color: hsl(0 0% 100%);
+    background-color: hsl(0, 0%, 0%);
     opacity: 0.6;    
-    width: 35%;
+    margin: 0 auto;
+    width: 50rem;
 }
 
 .logo {
@@ -26,11 +30,6 @@ body {
     width: 200px;
     cursor: pointer;
     opacity: 0.8;
-}
-
-* {
-    margin: 0;
-    padding: 0;;
 }
 
 .nav__links li, a {
@@ -43,6 +42,8 @@ body {
 
 header {
     fill-opacity: 0.4;
+    position: fixed;
+    width: 100%;
 }
 
 header, footer {
