@@ -51,7 +51,7 @@ header, footer {
     justify-content: space-between;
     align-items: center;
     padding: 30px;/* 30 pixels from the top and then 10% from the sides*/
-    background-color: #24252a;
+    background-color: hsl(230, 8%, 15%);
 }
 
 footer ul li:nth-child(1) {
@@ -72,7 +72,7 @@ footer ul li:nth-child(1) {
 }
 
 .nav__links li a:hover {
-    color:green;
+    color:hsl(120, 100%, 25%);
 }
 
 section {
