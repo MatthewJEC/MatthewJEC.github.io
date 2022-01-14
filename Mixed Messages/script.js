@@ -52,3 +52,22 @@ sentence()
 function refresh(){
     window.location.reload("Refresh")
   }
+
+let picture = () => {
+    if (randLeague === "Barclays Premier League") {
+        console.log('Premier League')
+    } else if (randLeague === "Spanish Primera Division") {
+        console.log('Spain 1')
+    } else if (randLeague === "German Bundesliga") {
+        console.log('Germany 1')
+    } else if (randLeague === "Spanish Primera Division") {
+        console.log('Spain 1')
+    } else if (randLeague === "Spanish Primera Division") {
+        console.log('Spain 1')
+    } else if (randLeague === "Spanish Primera Division") {
+        console.log('Spain 1')
+    }
+}
+
+picture()
+

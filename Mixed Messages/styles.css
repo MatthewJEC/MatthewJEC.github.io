@@ -21,3 +21,15 @@ header h2 {
     border: solid;
 }
 
+section h3 {
+    margin-top: 1%;
+}
+
+main {
+    margin-top: 2%;
+}
+
+button {
+    margin-top: 1%;
+}
+
