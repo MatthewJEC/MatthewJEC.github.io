@@ -7,15 +7,15 @@ body {
     background-size: 100%;
     padding: 10% 50px;
     background-position: center;
-    position: relative;
     top: 15em;
 }
 
-
 .mainhome h1 {
+    font-family: 'Space Mono', monospace;;
     text-transform: uppercase;  
     text-align: center;
-    font-size: xx-large;
+    font-weight: 700;
+    font-size: 2em;
     text-decoration: underline;
     border: 2px solid hsl(0, 0%, 0%);
     color: hsl(0 0% 100%);
@@ -42,20 +42,20 @@ body {
 
 header {
     fill-opacity: 0.4;
-    position: fixed;
-    width: 100%;
+    justify-content: space-between;
 }
 
 header, footer {
     display: flex;
-    justify-content: space-between;
+
     align-items: center;
-    padding: 30px;/* 30 pixels from the top and then 10% from the sides*/
+    padding: 30px 10%;/* 30 pixels from the top and then 10% from the sides*/
     background-color: hsl(230, 8%, 15%);
 }
 
-footer ul li:nth-child(1) {
-    padding: 0 0 0 0;
+footer {
+    margin-top: 5%;
+    justify-content: space-evenly;
 }
 
 .nav__links {
@@ -75,9 +75,20 @@ footer ul li:nth-child(1) {
     color:hsl(120, 100%, 25%);
 }
 
+h2 {
+    font-size: 1.5em;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+}
+
+p, ul, li {
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
 section {
     margin-left: 3%;
-
 }
 
 .services {
@@ -87,12 +98,9 @@ section {
 
 .services h2 {
     margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 .services li {
     list-style: square;
-}
-
-footer {
-    margin-top: 5%;
 }
