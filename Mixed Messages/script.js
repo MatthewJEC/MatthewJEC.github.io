@@ -8,11 +8,13 @@ let listOfPlayers = ["Lionel Messi","Cristiano Ronaldo","Xavi","Andres Iniesta",
 "Emmanuel Mayuka","John Terry","Kwadwo Asamoah","Leonardo Bonucci","Javier Pastore","Henrikh Mkhitaryan","Moussa Dembele","Hatem Ben Arfa","Samir Nasri","Shinji Kagawa","Wesley Sneijder",
 "Pepe","Marek Hamsik","Javi Martinez","Diego Forlan","Paulinho"]
 
-let listOfLeagues = ["Barclays Premier League","Spanish Primera Division","German Bundesliga","Italy Serie A","French Ligue 1","Portuguese Liga","Dutch Eredivisie","Brasileiro Série A",
-"Mexican Primera Division Torneo Clausura","Russian Premier Liga","English League Championship","Austrian T-Mobile Bundesliga","Belgian Jupiler League","Major League Soccer","Swiss Raiffeisen Super League",
-"Turkish Turkcell Super Lig","Danish SAS-Ligaen","Argentina Primera Division","Scottish Premiership","German 2. Bundesliga","Greek Super League","Japanese J League","Norwegian Tippeligaen",
-"Italy Serie B","Spanish Segunda Division","French Ligue 2","Swedish Allsvenskan","Chinese Super League","Australian A-League","English League One","United Soccer League","South African ABSA Premier League",
-"English League Two"]
+let listOfLeagues = ["Barclays Premier League","Spanish Primera Division","German Bundesliga",]
+
+// "French Ligue 1","Portuguese Liga","Dutch Eredivisie","Brasileiro Série A",
+// "Mexican Primera Division Torneo Clausura","Russian Premier Liga","English League Championship","Austrian T-Mobile Bundesliga","Belgian Jupiler League","Major League Soccer","Swiss Raiffeisen Super League",
+// "Turkish Turkcell Super Lig","Danish SAS-Ligaen","Argentina Primera Division","Scottish Premiership","German 2. Bundesliga","Greek Super League","Japanese J League","Norwegian Tippeligaen",
+// "Italy Serie B","Spanish Segunda Division","French Ligue 2","Swedish Allsvenskan","Chinese Super League","Australian A-League","English League One","United Soccer League","South African ABSA Premier League",
+// "English League Two""Italy Serie A",
 
 const randNumber = array => {
     return Math.floor(Math.random() * array.length)
@@ -43,29 +45,32 @@ const randGoals = () => {
     return goals
 }
 
-let sentence = () => {
-    document.write('In another time and place ' + randPlayer(listOfPlayers) + ' would have played in another league. Perhaps ' + randLeague(listOfLeagues) + '. Would they have been as proficient in this league? I predict the number of goals they would have scored would be ' + randGoals())
-}
+// let sentence = () => {
+//     document.write()
+// }
 
-sentence()
+// sentence()
 
 function refresh(){
     window.location.reload("Refresh")
   }
 
 let picture = () => {
-    if (randLeague === "Barclays Premier League") {
+    if (randLeague(listOfLeagues) == listOfLeagues[0]) {
         console.log('Premier League')
-    } else if (randLeague === "Spanish Primera Division") {
+        document.write('In another time and place ' + randPlayer(listOfPlayers) + ' would have played in another league. Perhaps ' + listOfLeagues[0] + '. Would they have been as proficient in this league? I predict the number of goals they would have scored would be ' + randGoals())  
+    } else if (listOfLeagues === listOfLeagues[1]) {
         console.log('Spain 1')
-    } else if (randLeague === "German Bundesliga") {
+        document.write('In another time and place ' + randPlayer(listOfPlayers) + ' would have played in another league. Perhaps ' + listOfLeagues[1] + '. Would they have been as proficient in this league? I predict the number of goals they would have scored would be ' + randGoals())
+    } else if (listOfLeagues === listOfLeagues[2]) {
         console.log('Germany 1')
-    } else if (randLeague === "Spanish Primera Division") {
-        console.log('Spain 1')
-    } else if (randLeague === "Spanish Primera Division") {
-        console.log('Spain 1')
-    } else if (randLeague === "Spanish Primera Division") {
-        console.log('Spain 1')
+        document.write('In another time and place ' + randPlayer(listOfPlayers) + ' would have played in another league. Perhaps ' + listOfLeagues[2] + '. Would they have been as proficient in this league? I predict the number of goals they would have scored would be ' + randGoals())
+    // } else if (randLeague === "Spanish Primera Division") {
+    //     console.log('Spain 1')
+    // } else if (randLeague === "Spanish Primera Division") {
+    //     console.log('Spain 1')
+    // } else if (randLeague === "Spanish Primera Division") {
+    //     console.log('Spain 1')
     }
 }
 

@@ -1,35 +1,58 @@
-body {
-    text-align: center;
-}
-
 header {
-    padding: 0 0 0 0;
-    margin: 0 0 0 0;
+    background-image: url(../Media/Loki_multiverse.png);
+    border: 1px solid black;
+    text-align: center;
+    background-size: 100% 100%;
 }
 
 header h1 {
     font-family: 'Cormorant Garamond', serif;
     font-size: 90px;
-    padding: 0 0 0 0;
-    border: solid;
-    border-radius: inherit;
+    color: hsla(355, 37%, 42%, 1);
 }
 
 header h2 {
     font-family: 'Space Mono', monospace;
     font-size: 20px;
-    border: solid;
+    /* border: solid; */
+    color: hsla(355, 37%, 42%, 1);
 }
 
 section h3 {
     margin-top: 1%;
 }
 
+.about {
+    text-align: center;
+}
+
 main {
     margin-top: 2%;
+    text-align: center;
 }
 
 button {
     margin-top: 1%;
 }
 
+#league {
+    height: 10%;
+    width: 10%;
+    position: relative;
+    left: 75%;
+}
+
+#player {
+    height: 10%;
+    width: 10%;
+    position: relative;
+    left: 5%;
+}
+
+#divider {
+    border: 2px solid black;
+    margin-top: 1em;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+}
