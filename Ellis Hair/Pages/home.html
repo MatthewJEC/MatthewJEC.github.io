@@ -13,6 +13,7 @@
     <body>
         <header>
             <a href="home.html"><img class='logo' src="../Images/banner.jpg"></a>
+            <h1>Welcome to Ellis Thom Hair Studio!</h1>
             <nav>
                 <ul class="nav__links">
                     <li><a href="#">Home</a></li>
@@ -23,7 +24,6 @@
         </header>
 
         <main class='mainhome'>
-            <h1>Welcome to Ellis Thom Hair Studio!</h1>
         </main>
 
         <section class="services">
@@ -40,14 +40,14 @@
             </ul>
         </section>
         <section class="findMe">
-                <h2>Section on where to find Ellis house - API google Maps to be implemented</h2>
-                <a href="./map.html" target="_blank"><button>Find Me on a Map!</button></a>
-                <script
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwV9vxWNRo8WrqDvP-XVdT486s_Vf6ols&callback=initMap&v=weekly"
-                async
-              ></script>
-                      </section>
-            
+                <h2>Where to find Me!</h2>
+                <div id='map'>
+                    <script
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwV9vxWNRo8WrqDvP-XVdT486s_Vf6ols&callback=initMap&v=weekly"
+                    async
+                    ></script>
+                </div>
+        </section>
             <footer>
                 <ul class="nav__links">
                     <li><script class="date" src="../JavaScript/todaysDate.js"></script></li>
