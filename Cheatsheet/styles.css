@@ -79,6 +79,7 @@ td {
     display: inline-block;
     position: relative;
     left: 1%;
+    border-radius: 10px;
 }
 
 .tables {
@@ -89,6 +90,8 @@ td {
     right: 2%;
     background-color: hsl(120, 50%, 25%);
     border-collapse: collapse;
+    border-radius: 10px;
+
 }
 
 .tables h2 {
