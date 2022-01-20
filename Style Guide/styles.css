@@ -1,0 +1,104 @@
+h1 {
+    Font-Weight: 700;
+    Font-Size: 2em;
+    Font-Family: 'Space Mono';
+}
+
+header h1 {
+    margin: 4% auto;
+    text-align: center;
+}
+
+h2 {
+    Font-Weight: 500;
+    Font-Size: 1.5em;
+    Font-Family: 'Cormorant Garamond';
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 1.125em;
+    font-family: 'Cormorant Garamond';
+}
+
+ul li {
+    Font-Weight: 300;
+    Font-Size: 20px;
+    Font-Family: 'Montserrat';
+}
+
+.main, .fontsmain {
+    /* border: 1px solid hsl(0, 0%, 0%); */
+    width: 40%;
+    margin: 5px;    
+    float: left;
+}
+
+.box {
+    width: 100%;
+    height: 50px;
+    display: inline-block;
+    color: hsl(0, 100%, 100%);
+    font-size: large;
+    text-align: center;
+    font-family: 'montserrat';
+
+}
+.colorsec {
+    width: 30em;
+}
+
+.box1 {
+    background-color: hsl(120, 20%, 25%);
+    
+}
+
+.box2 {    
+    background-color: hsl(120, 40%, 25%);
+}
+
+.box3 {
+    background-color: hsl(120, 60%, 25%);
+}
+
+.box4 {
+    background-color:hsl(120, 80%, 25%);
+}
+
+.font {
+    display: inline-block;
+    padding-right: 10em;
+    text-align: left;
+}
+
+.spacemono p, .spacemono h3 {
+    font-family: 'space mono';
+}
+
+.montserrat p, .montserrat h3 {
+    font-family: montserrat;
+}
+
+.garamond p, .garamond h3 {
+    font-family: 'Cormorant Garamond';
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.light {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.normal {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.bold {
+    font-size: 20px;
+    font-weight: 700;
+}
