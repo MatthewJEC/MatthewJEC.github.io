@@ -122,7 +122,7 @@ if (league == 'Spanish Primera Division') {
     document.getElementById('league').src='./leagues/england 4.png';}
 
 if (player == 'Lionel Messi') {
-    document.getElementById('player').src='./players/messi.jpg'
+    document.getElementById('player').src='./players/MESSI.jpg'
 } else if (player == 'Cristiano Ronaldo') {
     document.getElementById('player').src='./players/ronaldo.jpg'
 }
