@@ -3,6 +3,7 @@ header {
     border: 1px solid black;
     text-align: center;
     background-size: 100% 100%;
+    border-radius: 25%;
 }
 
 header h1 {
@@ -35,18 +36,24 @@ button {
     margin-top: 1%;
 }
 
-#league {
-    height: 10%;
-    width: 10%;
-    position: relative;
-    left: 75%;
+.holder {
+    display: flexbox;
+    flex: 100%;
+    border: 1px solid black;
+
 }
 
-#player {
-    height: 10%;
-    width: 10%;
-    position: relative;
-    left: 5%;
+.size {
+
+}
+
+.playerdiv {
+    border: 1px solid black;
+}
+
+#league, #player {
+    height: inherit;
+    width: inherit;
 }
 
 #divider {
@@ -54,8 +61,12 @@ button {
     margin-top: 1em;
     height: 500px;
     position: absolute;
-    left: 50%;
 }
+.leaguediv {
+    position: relative;
+    left: 75%;
+}
+
 
 .sentence {
     padding: 2%;

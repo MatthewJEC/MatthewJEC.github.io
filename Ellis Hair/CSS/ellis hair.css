@@ -5,10 +5,11 @@ body {
 .mainhome {
     background-image: url("../Images/haircutblonde.jpg");
     background-size: 100%;
+    border-radius: 9999px;
     padding: 10% 50px;
     background-position: center;
     top: 15em;
-    background-color: hsla(120, 40%, 25%, 0.7);
+    background-color: hsla(351, 34%, 57%, 0.2);
     background-blend-mode: screen;
 }
 
@@ -25,10 +26,10 @@ h1 {
 }
 
 .logo {
-    height: 200px;
-    width: 200px;
+    /* height: 200px;
+    width: 200px; */
     cursor: pointer;
-    opacity: 0.8;
+    border-radius: 20%;
 }
 
 .nav__links li, a {
@@ -46,15 +47,16 @@ header {
 
 header, footer {
     display: flex;
-
+    border-radius: 9999px;
     align-items: center;
-    padding: 30px 10%;/* 30 pixels from the top and then 10% from the sides*/
-    background-color: hsla(120, 30%, 25%, 1);
+    padding: 0 10%;
+    background-color: hsla(351, 34%, 57%, 1);
 }
 
 footer {
     margin-top: 5%;
     justify-content: space-evenly;
+    padding: 1% 0;
 }
 
 .nav__links {
