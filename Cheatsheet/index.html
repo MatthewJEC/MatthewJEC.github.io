@@ -13,12 +13,21 @@
     </header> 
     <body>
         <div class="inputnew">
+            <form action="#" method="post"></form>
             <h2>Add New Row</h2>
-            <input type="text" name="" id="">
-            <input type="text" name="" id="">
-            <input type="radio" name="" id="">
-            <input type="radio" name="" id="">
-            <button type="submit">Submit</button>
+            <hr>
+            <p>Key: <input type="text" name="key" id="key"></p>
+            <hr>
+            <p>Value: <input type="text" name="value" id="value"></p>
+            <hr>
+            <p>Which table will this appear in?</p>
+            <select name="table" id="selecttable">
+                <option value="selectors">Selectors</option>
+                <option value="Keys">Keys</option>
+            </select>
+            <hr>
+            <input type="submit" value="Add to Table">
+
         </div>
         <div class="tables">
             <h2>CSS Selectors and How to Use Them</h2>
