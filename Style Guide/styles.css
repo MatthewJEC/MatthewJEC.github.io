@@ -4,10 +4,14 @@ h1 {
     Font-Family: 'Space Mono';
 }
 
+            /* header */
+
 header h1 {
     margin: 4% auto;
     text-align: center;
 }
+
+            /* body */
 
 h2 {
     Font-Weight: 500;

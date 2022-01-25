@@ -1,3 +1,5 @@
+            /* header */
+
 header {
     background-image: url(../Media/Loki_multiverse.png);
     border: 1px solid black;
@@ -19,15 +21,19 @@ header h2 {
     color: hsla(355, 37%, 42%, 1);
 }
 
-section h3 {
-    margin-top: 1%;
-}
-
+            /* about */
+            
 .about {
     text-align: center;
 }
 
-main {
+.about h3 {
+    margin-top: 1%;
+}
+
+            /* button */
+
+#main {
     margin-top: 2%;
     text-align: center;
 }
@@ -36,37 +42,28 @@ button {
     margin-top: 1%;
 }
 
+            /* pictures */
+
 .holder {
-    display: flexbox;
-    flex: 100%;
-    border: 1px solid black;
-
-}
-
-.size {
-
-}
+    width: 50%;
+    height: 200px;
+    overflow: hidden;
+  }
+   
+.holder img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
 
 .playerdiv {
     border: 1px solid black;
 }
 
-#league, #player {
-    height: inherit;
-    width: inherit;
-}
-
 #divider {
     border: 2px solid black;
-    margin-top: 1em;
-    height: 500px;
-    position: absolute;
-}
-.leaguediv {
-    position: relative;
-    left: 75%;
-}
 
+}
 
 .sentence {
     padding: 2%;
