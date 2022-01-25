@@ -75,7 +75,7 @@ if (league == 'Spanish Primera Division') {
 } else if (league == "English League Championship") {
     document.getElementById('league').src='./leagues/england 2.png'
 } else if (league == "Austrian T-Mobile Bundesliga") {
-    document.getElementById('league').src='./leagues/austria 1.png'
+    document.getElementById('league').src='./leagues/austria 1.jpeg'
 } else if (league == "Belgian Jupiler League") {
     document.getElementById('league').src='./leagues/belgium 1.jpg'
 } else if (league == "Major League Soccer") {
@@ -121,8 +121,11 @@ if (league == 'Spanish Primera Division') {
 } else if (league == "English League Two") {
     document.getElementById('league').src='./leagues/england 4.png';}
 
+const playerbg = document.getElementById('player')
+const leaguebg = document.getElementById('league')
+
 if (player == 'Lionel Messi') {
-    document.getElementById('player').src='./players/MESSI.jpg'
+    playerbg.src='./players/MESSI.jpg'
 } else if (player == 'Cristiano Ronaldo') {
-    document.getElementById('player').src='./players/ronaldo.jpg'
+    playerbg.src='./players/ronaldo.jpg'
 }
