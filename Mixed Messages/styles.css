@@ -57,18 +57,21 @@ button:hover  {
 #divider {
     border: 2px solid black;
     height: 20rem;
-    position: absolute;
+    /* position: absolute; */
     left: 50%;
-    margin-left: -3px;
+    /* margin-left: -3px; */
     top: 50;
 }
 
 .holder{
-    position: absolute;
+    display: flex;
     height: 20rem;
-    left: 25%;
-    width: 60rem;
-    margin-left: -3px;
+    width: 60%;
+    /* border: 1px solid black; */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 20%;
 }
 
 .size{
