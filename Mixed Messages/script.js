@@ -1,6 +1,6 @@
-let listOfPlayers = ["Lionel Messi","Cristiano Ronaldo",]
+let listOfPlayers = ["Lionel Messi","Cristiano Ronaldo","Xavi","Andres Iniesta","Zlatan Ibrahimovic","Radamel Falcao"]
 
-"Xavi","Andres Iniesta","Zlatan Ibrahimovic","Radamel Falcao","Robin van Persie","Andrea Pirlo","Yaya Toure","Edinson Cavani","Sergio Aguero",
+"Robin van Persie","Andrea Pirlo","Yaya Toure","Edinson Cavani","Sergio Aguero",
 "Iker Casillas","Neymar","Sergio Busquets","Xabi Alonso","Thiago Silva","Mesut Ozil","David Silva","Bastian Schweinsteiger","Gianluigi Buffon","Luis Suarez","Sergio Ramos","Vincent Kompany",
 "Gerard Pique","Philipp Lahm","Willian","Marco Reus","Franck Ribery","Manuel Neuer","Ashley Cole","Wayne Rooney","Juan Mata","Thomas Muller","Mario Götze","Karim Benzema","Cesc Fabregas",
 "Oscar","Fernandinho","Javier Mascherano","Gareth Bale","Javier Zanetti","Daniele De Rossi","Dani Alves","Petr Cech","Mats Hummels","Carles Puyol","Angel Di Maria","Carlos Tevez","Didier Drogba",
@@ -128,4 +128,12 @@ if (player == 'Lionel Messi') {
     playerbg.src='./players/MESSI.jpg'
 } else if (player == 'Cristiano Ronaldo') {
     playerbg.src='./players/ronaldo.jpg'
+} else if (player == 'Xavi') {
+    playerbg.src='./players/xavi.jpg'
+} else if (player == "Andres Iniesta") {
+    playerbg.src='./players/iniesta.jpg'
+} else if (player == "Zlatan Ibrahimovic") {
+    playerbg.src='./players/zlatan.jpg'
+} else if (player == "Radamel Falcao") {
+    playerbg.src='./players/falcao.png'
 }
