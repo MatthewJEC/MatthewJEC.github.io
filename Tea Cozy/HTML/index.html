@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tea Cozy</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            * {
+                font-family: Helvetica, sans-serif;
+                color: seashell;
+                background-color: black;
+                opacity: 0.9;
+            }
+            header {
+                border-bottom: 1px solid seashell;
+                /* position: fixed; */
+                justify-content: space-between;
+                height: 69px; 
+            }
+            #logo {
+                height: 50px;
+                padding-left: 10px;
+            }
+            .navlinks {
+                list-style: none;
+                float: right;
+            }
+
+            .navlinks li {
+                display: inline-block;
+                text-decoration: underline;
+                padding-left: 10px;
+            }
+            main, footer {
+                margin: 0 20px;
+                text-align: center;
+            }
+            main {
+                /* display: flex; */
+                align-items: center;
+            }
+            .mission {
+                height: 700px;
+                background-image: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .missiontext {
+                width: 100%;
+                height: 100px;
+            }
+            p {
+                text-align: left;
+            }
+
+            .container {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+            }   
+            .image {
+                height: 200px;
+                width: 300px;
+            }
+
+            .location {
+                height: 500px;
+                background-image: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+            }
+            .flex {
+                display: flex;
+                width: auto;
+                border: 1px solid white;
+                justify-content: space-evenly;
+            }
+            .locbox {
+                width: 300px;
+                height: 300px;
+                opacity: 1;
+                margin-right: 40px;
+            }
+
+            .final {
+                height: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img id='logo' src="https://content.codecademy.com/courses/freelance-1/unit-4/img-tea-cozy-logo.png" alt="logo">
+            <ul class='navlinks'>
+                <li>Mission</li>
+                <li>Featured Tea</li>
+                <li>Locations</li>
+            </ul>
+        </header>
+        <main>
+            <div>
+                <div class='mission'>
+                    <div class="missiontext">
+                        <h2>Our Mission</h2>
+                        <h4>Handpicked, Artisanally Curated, Free Range, Sustainable, Small Batch, Fair Trade, Organic Tea</h4>
+                    </div>
+                </div>
+            </div>
+            <h2>Tea of the Month</h2>
+            <h4>What's Steeping at The Tea Cozy?</h4>
+            <div class='container'>
+                <div class='box'>
+                    <div class='image'><img class='image' src="https://content.codecademy.com/courses/freelance-1/unit-4/img-berryblitz.jpg" alt="fall berry Blitz"></div>
+                    <h4>Fall Berry Blitz Tea</h4>
+                </div>
+                <div class='box'>
+                    <div class='image'><img class='image' src="https://content.codecademy.com/courses/freelance-1/unit-4/img-spiced-rum.jpg" alt="spiced rum tea"></div>
+                    <h4>Spiced Rum Tea</h4>
+                </div>
+                <div class='box'>
+                    <div class='image'><img class='image' src="https://content.codecademy.com/courses/freelance-1/unit-4/img-donut.jpg" alt="seasonal Donuts"></div>
+                    <h4>Seasonal Donuts</h4>
+                </div>
+                <div class='box'>
+                    <div class='image'><img class='image' src="https://content.codecademy.com/courses/freelance-1/unit-4/img-myrtle-ave.jpg" alt="myrtle ave tea"></div>
+                    <h4>Myrtle Ave Tea</h4>
+                </div>
+                <div class='box'>
+                    <div class='image'><img class='image' src="https://content.codecademy.com/courses/freelance-1/unit-4/img-bedford-bizarre.jpg" alt="bedford bizzare tea"></div>
+                    <h4>Bedford Bizzare Tea</h4>
+                </div>
+            </div>
+            <div class='location'>
+                <div class='locbox'>
+                    <h3>Downtown</h3>
+                    <h4>384 West 4th St</h4>
+                    <h4>Suite 108</h4>
+                    <h4>Portland, Maine</h4>
+                </div>
+                <div class='locbox'>
+                    <h3>East Bayside</h3>
+                    <h4>3433 Phisherman's Avenue</h4>
+                    <h4>(Northwest Corner)</h4>
+                    <h4>Portland, Maine</h4>
+                </div>
+                <div class='locbox'>
+                    <h3>Oakdale</h3>
+                    <h4>515 Crescent Avenue</h4>
+                    <h4>Second Floor</h4>
+                    <h4>Portland, Maine</h4>
+                </div>
+            </div>
+            <div class="final">
+                <h2>The Tea Cozy</h2>
+                <h5>contact@theteacozy.com</h5>
+                <h5>917-555-8904</h5>
+            </div>
+        </main>
+        <footer>
+            <p>copyright The Tea Cozy 2017</p>
+        </footer>
+    </body>
+</html>
