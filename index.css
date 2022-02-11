@@ -1,6 +1,7 @@
-body {
-    background-image: url(./Media/Background-website-01.jpg);
-    background-size: 100%;
+h2 {
+    font-weight: 500;
+    font-size: 1.5em;
+    font-family: 'Cormorant Garamond', sans-serif;
 }
 
 
@@ -9,6 +10,7 @@ header {
     display: flexbox;
     text-align: center;
     padding: 10px;
+    border-bottom: 1px solid black;
 }
 
 header h1 {
@@ -34,10 +36,52 @@ header h1 {
     color: olivedrab;
 }
 
-img {
-    display: inline-block;
-    height: 15em;
-    width: 20em;
-    border: solid;
-    border-color: black;
+.about {
+    height: 500px;
+    text-align: center;
+    /* border: 1px solid black; */
+    display: flex;
+    background-color: beige;
+}
+
+
+.para {
+    justify-self: center;
+}
+
+.para p {
+    font-weight: 400;
+    font-size: 1em;
+    font-family: Montserrat;
+}
+
+.holder {
+    display: flex;
+    height: 700px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box {
+    height: 200px;
+    width: 300px;
+    border: 1px solid black;
+}
+
+.box img {
+    height: 200px;
+    width: 300px;
+}
+
+.contact {
+    text-align: center;
+    border: 4px dashed grey;
+}
+
+footer {
+    border: 1px solid black;
+    width: 50%;
+    height: 20%;
+    align-items: center;
 }
