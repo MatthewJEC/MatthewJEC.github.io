@@ -1,0 +1,162 @@
+* {
+    /* border: blue 1px solid; */
+    /* background-color: #eee; */
+}
+
+html {
+  background-color: #eee;
+}
+
+h2 {
+  Font-Weight: 500;
+  Font-Size: 1.5em;
+  Font-Family: 'Cormorant Garamond';
+}
+
+h3, p {
+  font-weight: 400;
+  font-size: 1.125em;
+  font-family: 'Cormorant Garamond';
+}
+
+ul li {
+  Font-Weight: 300;
+  Font-Size: 20px;
+  Font-Family: 'Montserrat';
+}
+
+.container {
+    display: grid;
+    max-width: 1500px;
+    position: relative;
+    margin: auto;
+    grid-template-areas: "logo logo links links"
+                         "picture picture picture picture" 
+                         "me about about about"
+                         "services services services map"
+                         "footer footer footer footer";
+    grid-template-rows: 250px 400px 200px 800px 120px;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    gap: 20px;
+  }
+
+  .links {
+    grid-area: links;
+    align-self: center;
+    justify-self: end;
+  }
+  
+  .logo {
+    grid-area: logo;
+    border-radius: 20%;
+    height: 75%;
+    width: 75%;
+    text-align: center;
+  }
+  
+  .logopic {
+    align-self: center;
+  }
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav__links li, a {
+    font-family: Arial, Helvetica;
+    font-weight: 500;
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color:hsl(120, 100%, 25%);
+}
+   
+  .picture {
+    grid-area: picture;
+    background-image: url('../../Ellis Hair/Images/pic.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+  } 
+
+  .me {
+    grid-area: me;
+  }
+  
+  .me img {
+    /* max-width: 100%; */
+    max-height: 100%;
+    border-radius: 20px;
+  }
+   
+  .about {
+    grid-area: about;
+  }
+  
+  .about p {
+    line-height: 1.4em;
+
+  }
+
+  .services {
+    grid-area: services;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid black;
+  } 
+  
+  .flexbox {
+    display: flex; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .box {
+    height: 200px;
+    width: 200px;
+    margin: 5%;
+  }
+
+  .box img {
+    min-height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+  }
+   
+  .map {
+    grid-area: map;
+    height: 600px;
+  }
+
+  #map {
+      height: 100%;
+      width: 90%;
+  }
+   
+  footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1% 0;
+  }
+
+
+
+  @media only screen and (max-width: 450px) {
+    .container {
+      display: inline-block;
+    }    
+  }
