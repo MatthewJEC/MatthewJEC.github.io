@@ -1,0 +1,120 @@
+* {
+    /* border: blue 1px solid; */
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 1.5em;
+    font-family: 'Cormorant Garamond', sans-serif;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1em;
+    font-family: Montserrat;
+    margin: 0 10px;
+}
+
+.container {
+    display: grid;
+    position: relative;
+    margin: auto;    
+    grid-template: 250px 400px 800px 250px / repeat(8, 1fr);
+  }
+
+.fill {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 4;
+    background-image: linear-gradient(to left, rgba(128,128,128, 0), rgba(128,128,128,1));
+}
+
+header {
+    grid-column: 3 / span 4;
+    text-align: center;
+}
+
+header h1 {
+    margin: 5% 0;
+    font-family: 'Space Mono', monospace;
+    font-size: 2.5rem;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0 2em;
+    color: rgba(128,128,128,1);
+    border: 1px black solid;
+    text-decoration: underline;
+    border-radius: 7px;
+    box-shadow: 2px 2px;
+}
+
+.nav__links li:hover {
+    box-shadow: 0px 0px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li:hover {
+    color: olivedrab;
+}
+
+.fill1 {
+    grid-column: 8 / span 1;
+    grid-row: 1 / span 4;
+    background-image: linear-gradient(to right, rgba(128,128,128, 0), rgba(128,128,128,1));
+}
+.me {
+    grid-column: 2 / span 2;
+}
+
+.me img {
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    border-radius: 50%;
+}
+
+.about {
+    grid-column: 4 / span 4;
+    text-align: center;
+    border-bottom: 1px black solid;
+    border-top: 1px black solid;
+}
+
+.flex {
+    grid-column: 2 / span 6;
+    text-align: center;
+    margin-top: 1%;
+}
+
+.holder {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.box {
+    height: 250px;
+    width: 300px;
+    text-align: center;
+}
+
+.box a {
+    text-decoration: none;
+    font-family: Montserrat;
+}
+
+.box img {
+    height: 200px;
+    width: 300px;
+    border: 1px solid black;
+}
+footer {
+    grid-column: 3 / span 4;
+    text-align:center;
+}

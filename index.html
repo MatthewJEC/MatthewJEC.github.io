@@ -1,46 +1,70 @@
+<html>
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="index.css">
-    <title>Matthew Campbell Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;700&family=Montserrat:wght@200;400;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <h1>Matthew Campbell Portfolio</h1>
-        <nav>
-            <ul class="nav__links">
-                <a href="#projects"><li>My Projects</li></a>
-                <a href="./Style Guide/index.html"><li>Style Guide</li></a>
-                <a href="#contactme"><li>Contact</li></a>
-            </ul>
-        </nav>
-    </header>
-    <div class="about">
-        <img src="./Media/me.jpg" alt="me">
-        <div class="para">
-            <h2>Banker Turned Web Developer</h2>
-            <p>I am self-taught web developer. </p>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Matthew Campbell Portfolio</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="./styles.css">
+        <title>Matthew Campbell Portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;700&family=Montserrat:wght@200;400;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <section class="fill"></section>
+            <header>
+                <h1>Matthew Campbell Portfolio</h1>
+                <nav>
+                    <ul class="nav__links">
+                        <a href="#projects"><li>My Projects</li></a>
+                        <a href="./Style Guide/index.html"><li>Style Guide</li></a>
+                        <a href="#footer"><li>Contact</li></a>
+                    </ul>
+                </nav>
+            </header>
+            <div class="fill1"></div>
+            <section class="me">
+                <img src="./Media/me.jpg" alt="me">
+            </section>
+            <div class="about">
+                <div class="para">
+                    <h2>Banker Turned Web Developer</h2>
+                    <p>Currently working through the Codecademy Full Stack Engineer Pro Career Path, I am a part-time website developer based in Edinburgh, Scotland.<br> </p>
+                </div>
+            </div>
+            <!-- <div class="codingpic">Picture of coding someting to be put in here</div> -->
+            <div class="flex" id="projects">
+                <h2>Please see some of the projects that I have completed</h2>
+                <p>Note that these are in the process of being updated as I am learning and growing as a developer!</p>
+                <div class="holder">
+                    <div class="box"><a href="./Ellis Hair/Pages/home.html"><img src="./Media/ellishairnew.png" alt="ellis hair">Ellis Thom Hair Studio</a>
+                    <p>This is a website that is for a friend. She does not yet know what about this website as she plucks up the courage to quit her job and start herself!</p></div>
+                    <div class="box"><a href="./Mixed Messages/index.html"><img src="./Ellis Hair/Images/mixedmessagesscreenshot20220107.png" alt="mixed Messages">Mixed Messages</a>
+                    <p>What would happen if certain players played in other leagues? This was a Codecademy Javascript challenge however all JS has been implemented by me and then the HTML/CSS has been implemented afterward. To be Updated.</p></div>
+                    <div class="box"><a href="./Cheatsheet/index.html"><img src="./Media/css cheatsheet.png" alt="css cheatsheet">CSS Cheatsheet</a></div>
+                </div>
+            </div>
+            <footer id="footer">
+                <form action="#" method="post">
+                    <label for="fullname">Full Name:</label><br>
+                    <input type="text" name="fullname" id="fullname"><br>
+                    <label for="emailaddress">Email Address:</label><br>
+                    <input type="email" name="emailaddress" id="emailaddress"><br>
+                    <label for="message">Message:</label><br>
+                    <textarea name="message" id="message" cols="60" rows="5"></textarea><br>
+                    <button type="submit">Submit!</button>
+                </form>
+            </footer>
         </div>
-    </div>
-    <div class="holder" id="projects">
-        <div class="box"><a href="./Ellis Hair/Pages/home.html"><img src="./Media/ellishairnew.png" alt="ellis hair"></a></div>
-        <div class="box"><a href="./Mixed Messages/index.html"><img src="./Ellis Hair/Images/mixedmessagesscreenshot20220107.png" alt="mixed Messages"></a></div>
-        <div class="box"><a href="./Cheatsheet/index.html"><img src="./Media/css cheatsheet.png" alt="css cheatsheet"></a></div>
-    </div>
-    <div class="contact" id="contactme">
-        <h2>Name</h2>
-        <h2>Email ID</h2>
-        <h2>Message</h2>
-    </div>
-    <footer>
-
-    </footer>
-</body>
+    </body>
 </html>
+
