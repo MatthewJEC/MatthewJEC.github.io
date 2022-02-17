@@ -29,6 +29,12 @@ p {
     background-image: linear-gradient(to left, rgba(128,128,128, 0), rgba(128,128,128,1));
 }
 
+.fill1 {
+    grid-column: 8 / span 1;
+    grid-row: 1 / span 4;
+    background-image: linear-gradient(to right, rgba(128,128,128, 0), rgba(128,128,128,1));
+}
+
 header {
     grid-column: 3 / span 4;
     text-align: center;
@@ -40,7 +46,7 @@ header h1 {
     font-size: 2.5rem;
 }
 
-.nav__links li {
+/* .nav__item {
     display: inline-block;
     padding: 0 2em;
     color: rgba(128,128,128,1);
@@ -50,23 +56,75 @@ header h1 {
     box-shadow: 2px 2px;
 }
 
-.nav__links li:hover {
+.nav__item:hover {
     box-shadow: 0px 0px;
 }
 
-.nav__links li a {
+.nav__item a {
     transition: all 0.3s ease 0s;
 }
 
-.nav__links li:hover {
+.nav__item:hover {
+    color: olivedrab;
+} */
+
+.nav {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.nav_item {
+    margin: 0 10px;
+}
+
+.nav_links {
+    color: #666;
+    padding: 5px 50px;
+    overflow: hidden;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size 24px;
+    transition: .3s;
+    position: relative;
+}
+
+.nav_links:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 50%;
+    height: 2px;
+    background: #000;
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.nav_links:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    width: 50%;
+    height: 2px;
+    background: #000;
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.nav_links:hover {
     color: olivedrab;
 }
 
-.fill1 {
-    grid-column: 8 / span 1;
-    grid-row: 1 / span 4;
-    background-image: linear-gradient(to right, rgba(128,128,128, 0), rgba(128,128,128,1));
+.nav_links:hover:before {
+    right: 0;
 }
+
+.nav_links:hover:after {
+    left: 0;
+}
+
 .me {
     grid-column: 2 / span 2;
 }
@@ -123,7 +181,10 @@ header h1 {
     margin-top: 5%;
     display: flex;
     justify-content: space-evenly;
+}
 
+.holder p {
+    overflow: hidden;
 }
 
 .box {
@@ -144,8 +205,8 @@ header h1 {
 }
 
 .box img {
-    height: 200px;
-    width: 300px;
+    height: 80%;
+    width: 100%;
     border: 1px solid black;
 }
 footer {
