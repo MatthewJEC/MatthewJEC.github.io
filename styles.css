@@ -422,7 +422,79 @@ footer {
     }
 }
 
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 425px) and (max-width: 689px) {
+    .container {
+        display: grid;
+        position: relative;
+        margin: auto;    
+        grid-template: 250px 350px 1200px 550px 150px / repeat(8, 1fr);
+      }
+
+    header {
+        align-items: center;
+    }
+    
+    header h1 {
+        font-size: 2em;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav_item {
+        margin: 0 0;
+    }
+
+    .nav_links {
+        padding: 1% 5%;
+        text-transform: none;
+        font-size: 1em;
+    }
+
+    .me {
+        border-bottom: 1px solid black;
+    }
+
+    .me img {
+        height: 25%;
+        width: 100%;  
+    }
+
+    .about {
+      font-size: small;  
+    }
+
+    .holder {
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .box {
+        height: 10%;
+        width: 100%;
+        padding-bottom: 5%;
+    }
+
+    .contact {
+        grid-column: 2 / span 6;
+        padding-top: 20%;
+    }
+
+    .contactcontainer {
+        width: 100%;
+        padding: 0;
+    }
+
+    .icons img {
+        height: 1em;
+        width: 1em;
+    }
+}
+
+@media only screen and (min-width: 690px) and (max-width: 768px) {
     .container {
         display: grid;
         position: relative;
