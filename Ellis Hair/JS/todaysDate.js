@@ -1,3 +1,4 @@
+let placeholder = document.getElementById("placeholder")
 const today = new Date()
 
 const currentHour = today.getHours()
@@ -33,10 +34,19 @@ const dayAsText = day => {
     return dayText
 }
 
+// if (currentHour > 16) {
+//     document.write('Good Evening! The time is currently ' + currentHour + ':' + currentMinute + '. Today is ' + dayAsText(currentDay) + '.')    
+// } else if (currentHour > 11) {
+//     document.write('Good Afternoon! The time is currently ' + currentHour + ':' + currentMinute + '. Today is ' + dayAsText(currentDay) + '.')
+// } else if (currentHour >= 0) {
+//     document.write('Good Morning! The time is currently ' + currentHour + ':' + currentMinute + '. Today is ' + dayAsText(currentDay) + '.')
+// }
+
+
 if (currentHour > 16) {
-    document.write('Good Evening! The time is currently ' + currentHour + ':' + currentMinute + '. Today is ' + dayAsText(currentDay) + '.')    
+    placeholder.innerHTML = "Good Evening! The time is currently " + currentHour + ":" + currentMinute+ ". Today is " + dayAsText(currentDay) + "."
 } else if (currentHour > 11) {
-    document.write('Good Afternoon! The time is currently ' + currentHour + ':' + currentMinute + '. Today is ' + dayAsText(currentDay) + '.')
+    placeholder.innerHTML = "Good Afternoon! The time is currently " + currentHour + ":" + currentMinute + ". Today is " + dayAsText(currentDay) + "."
 } else if (currentHour >= 0) {
-    document.write('Good Morning! The time is currently ' + currentHour + ':' + currentMinute + '. Today is ' + dayAsText(currentDay) + '.')
+    placeholder.innerHTML = "Good Morning! The time is currently " + currentHour + ":" + currentMinute + ". Today is " + dayAsText(currentDay) + "."
 }

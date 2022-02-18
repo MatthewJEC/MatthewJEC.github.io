@@ -14,6 +14,8 @@
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="./styles.css">
         <title>Matthew Campbell Portfolio</title>
+        <script src="main.js" async defer></script>
+        <script src="./Ellis Hair/JS/todaysDate.js" defer async></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;700&family=Montserrat:wght@200;400;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -22,11 +24,11 @@
         <div class="container">
             <section class="fill"></section>
             <header>
-                <h1>Matthew Campbell Portfolio</h1>
+                <h1>MatthewJEC Portfolio</h1>
                 <nav>
                     <ul class="nav">
                         <a href="#projects" class="nav_links"><li class="nav_item">My Projects</li></a>
-                        <a href="./Style Guide/index.html" class="nav_links"><li class="nav__item">Style Guide (To be updated)</li></a>
+                        <a href="./Style Guide/index.html" class="nav_links"><li class="nav__item">Style Guide</li></a>
                         <a href="#footer" class="nav_links"><li class="nav_item">Contact</li></a>
                     </ul>
                 </nav>
@@ -59,21 +61,43 @@
                     <p>This is a website that is for a friend. She does not yet know what about this website as she plucks up the courage to quit her job and start herself!</p></div>
                     <div class="box"><a href="./Mixed Messages/index.html"><img src="./Ellis Hair/Images/mixedmessagesscreenshot20220107.png" alt="mixed Messages">Mixed Messages</a>
                     <p>What would happen if certain players played in other leagues? This was a Codecademy Javascript challenge however all JS has been implemented by me and then the HTML/CSS has been implemented afterward. To be Updated.</p></div>
-                    <div class="box"><a href="./Cheatsheet/index.html"><img src="./Media/css cheatsheet.png" alt="css cheatsheet">CSS Cheatsheet</a></div>
+                    <div class="box"><a href="./Cheatsheet/index.html"><img src="./Media/css cheatsheet.png" alt="css cheatsheet">CSS Cheatsheet</a><p>Another Codecademy Project. The functionality has not been included on this website yet however it is in the plans to complete the back-end learning and then link this table to a database which I can add to.</p></div>
                 </div>
             </div>
-            <footer id="footer">
-                <form action="#" method="post">
-                    <label for="fullname">Full Name:</label><br>
-                    <input type="text" name="fullname" id="fullname"><br>
-                    <label for="emailaddress">Email Address:</label><br>
-                    <input type="email" name="emailaddress" id="emailaddress"><br>
-                    <label for="message">Message:</label><br>
-                    <textarea name="message" id="message" cols="60" rows="5"></textarea><br>
-                    <button type="submit">Submit!</button>
-                </form>
+            <section class="contact">
+                <h2>Contact Me!</h2><br>
+                <div class="contactcontainer">
+                    <form id="my-form" action="https://formspree.io/f/xoqrdnar" method="POST">
+                        <div class="form-group">
+                            <label for="fullname">Full Name:</label><br>
+                            <input type="text" name="fullname" id="fullname"><br>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="emailaddress">Email Address:</label><br>
+                            <input type="email" name="emailaddress" id="emailaddress"><br>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message:</label><br>
+                            <textarea name="message" id="message" cols="60" rows="5"></textarea><br>
+                        </div>
+
+                        <button type="submit">Submit!</button>
+                    </form>
+                </div>
+                <div id="status"></div>
+            </section>
+            <footer>
+                <div>
+                    <p id="placeholder"></p>
+                </div>
+                <div class="icons">
+                    <a href="www.linkedin.com/in/matthewjec"><img src="./Media/linkedin.png" alt="linkedin"></a>
+                     <a href="https://github.com/MatthewJEC"><img src="./Media/github.png" alt="github"></a>
+                </div>
             </footer>
         </div>
     </body>
-</html>
+</html> 
 
