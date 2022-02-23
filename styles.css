@@ -1,6 +1,24 @@
 :root {
     font-size: 16px;
+    font-family: 'Space Mono';
+    --text-primary: hsl(1, 1%, 22%);
+    --text-secondary: hsl(1, 1%, 91%);
+    --bg-primary: hsla(141, 34%, 52%, 0.7);
+    --bg-secondary: hsl(141, 34%, 22%);
+    --transition-speed: 600ms;
 }
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #1e1e24;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: hsl(141, 34%, 52%);
+  }
 
 h2 {
     font-weight: 500;
@@ -16,79 +34,60 @@ p {
     line-height: 1.5rem;
 }
 
-body {
-    margin-left: 5rem;
+header {
+    top: 0;
+    height: 5rem;
+    width: 100vw;
+    position: fixed;
+    transition: 600ms ease;   
+}
+
+.nav-list {
+    list-style: none;
+    background-color: var(--bg-primary);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.nav-list:hover {
+    height: 12rem;
+    align-items: center;
+}
+
+.nav-list:hover .link-text {
+    display: block;
   }
 
-header {
-    text-align: center;
+.link-text {
+    display: none;
+    margin-left: 1rem;
 }
 
-header h1 {
-    margin: 5% 0;
-    font-family: 'Space Mono', monospace;
-    font-size: 2.5rem;
+.nav-item {
+    width: 10%;
+    height: 10%;
 }
 
-.navbar {
-    width: 5rem;
-    height: 100vh;
-    position: fixed;
-    /* display: flex;
-    align-items: center;
-    list-style-type: none;
-    justify-content: center; */
-}
+.nav-link svg {
+    height: 3rem;
+    min-height: 3rem;
+    margin: 1.5 1.5rem;
+    padding-bottom: 1rem;
+  }
 
-/* .nav_item {
-    margin: 0 10px;
-}
+.nav-item:last-child {
+    float: right;
+  }
+  
 
-.nav_links {
-    color: #666;
-    padding: 5px 50px;
-    overflow: hidden;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 24px;
-    transition: .3s;
-    position: relative;
-}
 
-.nav_links:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 100%;
-    width: 50%;
-    height: 2px;
-    background: #000;
-    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+body {
+    margin-top: 5rem;
+    padding: 1rem 0;
 }
-
-.nav_links:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 100%;
-    width: 50%;
-    height: 2px;
-    background: #000;
-    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-.nav_links:hover {
-    color: olivedrab;
-}
-
-.nav_links:hover:before {
-    right: 0;
-}
-
-.nav_links:hover:after {
-    left: 0;
-} */
 
 .me {
     display: flex;
